@@ -5,22 +5,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> weather website </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
 </head>
 <body>
+   <div class="bodyMaxWe">
     <header>
-
+        <div class="searchBox">
+         <form action="">
+            <input type="text" placeholder="Enter a city" class="CitySearcher">
+            <input type="submit" value="Search">
+         </form>
+       <div class="weatherInfo">
+        <div class="NameOfCity">
+            <h1 class="CityName">
+                Kabul
+            </h1>
+            <P>
+             <span class="time">    Thursday, 31 August 2025 | 10:05 PM </span>
+            </P>
+        </div>
+        <hr class="firstLine">
+        <div class="degree">
+            <h2>
+                <span class="weatherIcon"> 🌞</span> <br> <span class="current-temperature-value"> 19°C</span>
+            </h2>
+            <p>
+                <samp class="condition">
+                    <strong> clear sun</strong>
+                </samp>
+                <br> 
+                <samp class="feelLike">
+                   <strong> <span class="coordinates">  19°C / 10°C   feel like 17°C </span></strong>
+                </samp>
+            </p>
+        </div>
+       </div>
+        </div>
     </header>
     <main>
-        <h1>
-            Paris
-        </h1>
-        <p>
-            Thursday, 31 August 2025 | 10:05 PM
-        </p>
-        <li>
-            Friday  26 degree
-        </li>
+       <div class="mainSection">
+        <div class="mainFirstSection">
+            <div class="CondiTion">
+                <ul>
+                    <div class="CondiTionGrib">
+                        <div class="Uv-index"> <li><strong>  Uv Index </strong> <br> Low</li></div>
+                        <div class="wind"> <li> <i class="fa-solid fa-wind"></i> <strong>Wind</strong> <br> 6 km/h</li></div>
+                        <div class="Humidity">  <li>  <strong> Humidity</strong> <br> 50% </li></div>
+                        <div class="rain"> <li> <strong><i class="fa-solid fa-droplet" style="color: #0b73c4;"></i> Rain </strong> <br> 2% </li></div>
+                        <div class="Pollen"> <li> <strong> Pollen </strong> <br> Modrerate </li></div>
+                        <div class="AQI"> <li> <strong> AQI </strong> <br> Low </li></div>
+                    
+                    </div>
+                </ul>
+            </div>
+            <div class="sunCondition">
+                 <ul>
+                <div class="sunConditionGrid">
+                   <div class="Sunrise">  <li> <strong> Sunrise</strong> <br> 5:27 am</li></div>
+                   <div class="Sunset">  <li> <strong> Sunset</strong> <br> 5:27 pm</li></div>
+                </div>
+                 </ul>
+            </div>
+        </div>
+        <ul >
+            <div class="dailyWeather" >
+               <figure class="firstDay">  <li> <div class="dayOne"> Friday</div> <br> <div class="iconOne"> 🌞</div> <div class="temOne"> 19°C / 10°C  </div> <br> <div class="rainConOne"> <i class="fa-solid fa-droplet"></i> rain 2%</div> </li></figure>
+               <figure  class="secondDay"> <li> Saturday <br> <div class="iconTwo"> 🌞</div> <div class="temTwo"> 19°C / 10°C </div> <br> <div class="rainConTwo"><i class="fa-solid fa-droplet"></i> rain 2%</div> </figure>
+               <figure class="thirdDay"> <li> sunday <br> <div class="iconThree"> 🌞</div> <div class="temThree">  19°C / 10°C  </div> <br> <div class="rainConThree"> <i class="fa-solid fa-droplet"></i> rain 2%</div> </li> </figure>
+               <figure class="fourthDay"> <li> Manday <br> <div class="iconFour"> 🌞</div> <div class="temFour">  19°C / 10°C  </div> <br> <div class="rainConFour"> <i class="fa-solid fa-droplet"></i> rain 2%</div> </li> </figure>
+               <figure class="fifthDay"> <li> thuesday <br> <div class="iconFive"> 🌞</div> <div class="temfive">  19°C / 10°C  </div> <br> <div class="rainConfive"> <i class="fa-solid fa-droplet"></i> rain 2%</div> </li></figure>
+               <figure class="sixthDay"><li> wednesday <br> <div class="iconSix"> 🌞</div> <div class="temsix">  19°C / 10°C  </div> <br> <div class="rainConsix"> <i class="fa-solid fa-droplet"></i> rain 2%</div> </li></figure>
+        </div>
+        </ul>
+       </div>
     </main>
+    <hr>
+    <footer>
+        This project was coded by Naeema "Naime" and is on GitHub and hosted on Netlify
+    </footer>
 
+   </div>
 </body>
+<script src="index.js"></script>
 </html>
