@@ -1,6 +1,6 @@
 body{
     text-align: center;
-    background-color: aquamarine;
+    background-color: rgb(185, 218, 248);
 }
 
 .bodyMaxWe{
@@ -10,9 +10,37 @@ body{
     margin:60px auto;
     border-radius: 25px;
     box-shadow: 0px 30px 50px rgb(97, 92, 92);
+    transform: skew(-4deg);
 }
 form{
     margin: 30px;
+}
+img {
+    height: 45px;
+    width: 45px;
+}
+#button{
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    margin: 10px;
+    border-radius: 100%;
+    background-color: field;
+    box-shadow: 0px 30px 50px rgb(97, 92, 92);
+    cursor: pointer;
+    position: relative;
+    color: gray;
+    font-size: 12px;
+    
+}
+
+.current-temperature-value{
+    font-size: 30px;
+}
+ .mainIMG{
+    height: 75px;
+    width: 75px;
+    position: relative;
 }
 .CitySearcher{
     width: 300px;
@@ -46,7 +74,7 @@ form{
     justify-content:space-between;
 }
 .CondiTion {
-    max-width: 260px;
+    max-width: 650px;
     background-color: rgb(158, 187, 212);
     padding: 25px;
     margin:60px auto;
@@ -67,7 +95,7 @@ ul{
 }
 ul .CondiTionGrib{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 ul .sunConditionGrid{
     display: flex;
@@ -79,46 +107,19 @@ ul .dailyWeather{
     overflow:hidden;
     
 }
-figure {
+.fiGure {
     font-size: 16px;
     max-width: 25%;
     background-color: rgba(127, 162, 192, 0.61);
-    border-bottom: 1px solid rgb(87, 81, 81);;
-    border-right:  2px solid rgb(77, 72, 72);
+    border-bottom: 7px solid rgb(243, 234, 234);;
+    border-right: 7px solid rgb(240, 233, 233);
     padding: 25px;
     margin:5px auto;
     border-radius: 25px;
     box-shadow: 0px 30px 50px rgb(97, 92, 92);
-    position: relative;
+    transform:skew(20deg);
 }
-figure:hover {
-    transform: scale(1.5);
+.fiGure:hover {
+    transform: scale(1.2);
     z-index: index;
-}
-.firstDay {
-    left: 45px;
-    z-index: 10;
-}
-.secondDay{
-    right: -25px;
-    z-index: 9;
-    
-}
-.thirdDay{
-    right: -5px;
-    z-index: 8;
-    
-}
-.fourthDay{
-    right: 13px;
-    z-index: 7;
-}
-.fifthDay{
-    right: 30px;
-    z-index: 6;
-}
-.sixthDay{
-    right: 50px;
-    z-index: 5;
-    
 }

@@ -15,7 +15,7 @@
         <div class="searchBox">
          <form action="">
             <input type="text" placeholder="Enter a city" class="CitySearcher">
-            <input type="submit" value="Search">
+            <input type="submit" value="Search" id="button">
          </form>
        <div class="weatherInfo">
         <div class="NameOfCity">
@@ -29,7 +29,7 @@
         <hr class="firstLine">
         <div class="degree">
             <h2>
-                <span class="weatherIcon"> 🌞</span> <br> <span class="current-temperature-value"> 19°C</span>
+                <span class="weatherIcon"> 🌞</span> <span class="current-temperature-value"> 19<sup>°C</sup> </span>
             </h2>
             <p>
                 <samp class="condition">
@@ -37,7 +37,7 @@
                 </samp>
                 <br> 
                 <samp class="feelLike">
-                   <strong> <span class="coordinates">  19°C / 10°C   feel like 17°C </span></strong>
+                   <strong> <span class="coordinates">  19°C / 10°C  </span> <span class="temFeel"> feel like 17°C</span> </strong>
                 </samp>
             </p>
         </div>
@@ -50,33 +50,26 @@
             <div class="CondiTion">
                 <ul>
                     <div class="CondiTionGrib">
-                        <div class="Uv-index"> <li><strong>  Uv Index </strong> <br> Low</li></div>
-                        <div class="wind"> <li> <i class="fa-solid fa-wind"></i> <strong>Wind</strong> <br> 6 km/h</li></div>
-                        <div class="Humidity">  <li>  <strong> Humidity</strong> <br> 50% </li></div>
-                        <div class="rain"> <li> <strong><i class="fa-solid fa-droplet" style="color: #0b73c4;"></i> Rain </strong> <br> 2% </li></div>
-                        <div class="Pollen"> <li> <strong> Pollen </strong> <br> Modrerate </li></div>
+                        <div class="Uv-index"> <li><strong>  Uv Index </strong> <br> Low</li></div> <hr>
+                        <div class="wind"> <li> <i class="fa-solid fa-wind"></i><strong>Wind</strong> <br> <span id="Windspeed">6</span> km/h</li></div> <hr>
+                        <div class="Humidity">  <li> <i class="fa-solid fa-droplet" style="color: #0b73c4;"></i>° <strong>Humidity</strong> <br> <span id="Humidity"> 50%</span> </li></div> <hr>
+                        <div class="rain"> <li> <strong><i class="fa-solid fa-droplet" style="color: #0b73c4;"></i>Rain </strong> <br> 2% </li></div> <hr>
+                        <div class="Pollen"> <li> <strong> Pollen </strong> <br> Modrerate </li></div> <hr>
                         <div class="AQI"> <li> <strong> AQI </strong> <br> Low </li></div>
                     
                     </div>
                 </ul>
             </div>
-            <div class="sunCondition">
-                 <ul>
-                <div class="sunConditionGrid">
-                   <div class="Sunrise">  <li> <strong> Sunrise</strong> <br> 5:27 am</li></div>
-                   <div class="Sunset">  <li> <strong> Sunset</strong> <br> 5:27 pm</li></div>
-                </div>
-                 </ul>
-            </div>
+           
         </div>
         <ul >
             <div class="dailyWeather" >
-               <figure class="firstDay">  <li> <div class="dayOne"> Friday</div> <br> <div class="iconOne"> 🌞</div> <div class="temOne"> 19°C / 10°C  </div> <br> <div class="rainConOne"> <i class="fa-solid fa-droplet"></i> rain 2%</div> </li></figure>
-               <figure  class="secondDay"> <li> Saturday <br> <div class="iconTwo"> 🌞</div> <div class="temTwo"> 19°C / 10°C </div> <br> <div class="rainConTwo"><i class="fa-solid fa-droplet"></i> rain 2%</div> </figure>
-               <figure class="thirdDay"> <li> sunday <br> <div class="iconThree"> 🌞</div> <div class="temThree">  19°C / 10°C  </div> <br> <div class="rainConThree"> <i class="fa-solid fa-droplet"></i> rain 2%</div> </li> </figure>
-               <figure class="fourthDay"> <li> Manday <br> <div class="iconFour"> 🌞</div> <div class="temFour">  19°C / 10°C  </div> <br> <div class="rainConFour"> <i class="fa-solid fa-droplet"></i> rain 2%</div> </li> </figure>
-               <figure class="fifthDay"> <li> thuesday <br> <div class="iconFive"> 🌞</div> <div class="temfive">  19°C / 10°C  </div> <br> <div class="rainConfive"> <i class="fa-solid fa-droplet"></i> rain 2%</div> </li></figure>
-               <figure class="sixthDay"><li> wednesday <br> <div class="iconSix"> 🌞</div> <div class="temsix">  19°C / 10°C  </div> <br> <div class="rainConsix"> <i class="fa-solid fa-droplet"></i> rain 2%</div> </li></figure>
+               <figure class="firstDay"> </figure>
+               <figure  class="secondDay">  </figure>
+               <figure class="thirdDay">  </figure>
+               <figure class="fourthDay">  </figure>
+               <figure class="fifthDay"> </figure>
+               <figure class="sixthDay"></figure>
         </div>
         </ul>
        </div>
